@@ -1,2 +1,144 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="lover">
+  <image src="/image/temp/Boy.png" mode="aspectFit" class="header" />
+  <image src="/image/temp/love-act.png" mode="aspectFit" class="love" />
+  <image src="/image/temp/Girl.png" mode="aspectFit" class="header" />
+</view>
+
+<view class="text">在一起的第200天</view>
+
+<view class="product">
+  <view class="masonry">
+    <view class="item">
+      <image src="/image/temp/mv.jpg" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次奖励色色一次奖励色色一次奖励色色一次奖励色色一次奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/mv.jpg" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/mv.jpg" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/mv.jpg" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/mv.jpg" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Girl.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+    <view class="item">
+      <image src="/image/temp/Boy.png" mode="widthFix" />
+      <view class="price">128老婆币</view>
+      <view class="title">奖励色色一次</view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="line"></view>
+  <view class="text">已经到底了</view>
+  <view class="line"></view>
+</view>

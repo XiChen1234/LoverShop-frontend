@@ -1,11 +1,43 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/center/center",
+    "pages/list/list",
+    "pages/zone/zone"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarBackgroundColor": "#FFB6C1",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "恋爱商铺"
+  },
+  "tabBar": {
+    "selectedColor": "#FF69B4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "初见",
+        "iconPath": "image/icon/meet.png",
+        "selectedIconPath": "image/icon/meet-act.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "心动",
+        "iconPath": "image/icon/love.png",
+        "selectedIconPath": "image/icon/love-act.png"
+      },
+      {
+        "pagePath": "pages/zone/zone",
+        "text": "情缘",
+        "iconPath": "image/icon/emotion.png",
+        "selectedIconPath": "image/icon/emotion-act.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "归宿",
+        "iconPath": "image/icon/home.png",
+        "selectedIconPath": "image/icon/home-act.png"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",

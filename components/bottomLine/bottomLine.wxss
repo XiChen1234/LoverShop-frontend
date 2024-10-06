@@ -1,0 +1,17 @@
+/* components/bottomLine/bottomLine.wxss */
+.component {
+  margin-bottom: 30rpx;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.component .line {
+  border: 0.5rpx solid #969696;
+  width: 30%;
+}
+.component .text {
+  font-size: 25rpx;
+  color: #949494;
+  font-weight: normal;
+}

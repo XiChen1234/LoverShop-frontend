@@ -136,3 +136,7 @@
     </view>
   </view>
 </view>
+
+<view>
+  <bottomLine></bottomLine>
+</view>

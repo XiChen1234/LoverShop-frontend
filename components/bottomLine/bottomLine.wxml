@@ -1,0 +1,6 @@
+<!--components/bottomLine/bottomLine.wxml-->
+<view class="component">
+  <view class="line"></view>
+  <view class="text">已经到底了呦~</view>
+  <view class="line"></view>
+</view>

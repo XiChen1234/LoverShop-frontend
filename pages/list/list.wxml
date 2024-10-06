@@ -1,2 +1,275 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<!-- 配偶发布的任务 -->
+<view class="task">
+  <view class="tab" bind:tap="onFold" id="0">
+    <view class="text">老婆大人的任务</view>
+    <view class="btn">
+      <image src="/image/icon/fold.png" mode="aspectFit" class="{{listFolded[0] ? 'fold' : ''}}"/>
+    </view>
+  </view>
+  <view class="list-box {{listFolded[0] ? 'fold' : ''}}">
+    <view class="list todo">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+    </view>
+    <view class="list doing">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 用户发布的任务 -->
+<view class="task">
+  <view class="tab" bind:tap="onFold" id="1">
+    <view class="text">我发布的任务</view>
+    <view class="btn">
+      <image src="/image/icon/fold.png" mode="aspectFit" class="fold"  class="{{listFolded[1] ? 'fold' : ''}}"/>
+    </view>
+  </view>
+  <view class="list-box {{listFolded[1] ? 'fold' : ''}}">
+    <view class="list doing">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+    </view>
+    <view class="list todo">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 配偶的折叠所有任务 -->
+<view class="task">
+  <view class="tab" bind:tap="onFold" id="2">
+    <view class="text">老婆大人的所有任务</view>
+    <view class="btn">
+      <image src="/image/icon/fold.png" mode="aspectFit" class="fold"  class="{{listFolded[2] ? 'fold' : ''}}"/>
+    </view>
+  </view>
+  <view class="list-box {{listFolded[2] ? 'fold' : ''}}">
+    <view class="list done">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+    </view>
+    <view class="list todo">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+    </view>
+    <view class="list doing">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 用户的折叠所有任务 -->
+<view class="task">
+  <view class="tab" bind:tap="onFold" id="3">
+    <view class="text">我发布的所有任务</view>
+    <view class="btn">
+      <image src="/image/icon/fold.png" mode="aspectFit"  class="{{listFolded[3] ? 'fold' : ''}}"/>
+    </view>
+  </view>
+  <view class="list-box {{listFolded[3] ? 'fold' : ''}}">
+    <view class="list done">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">完成</view>
+      </view>
+    </view>
+    <view class="list doing">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">审核中</view>
+      </view>
+    </view>
+    <view class="list todo">
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+      <view class="item">
+        <view class="text">
+          <view class="title">打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生打扫卫生</view>
+          <view class="price">128老婆币</view>
+        </view>
+        <view class="status">待办</view>
+      </view>
+    </view>
+  </view>
+</view>

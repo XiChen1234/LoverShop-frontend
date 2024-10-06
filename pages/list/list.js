@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    listFolded: [false, false, true, true]
+  },
 
+  onFold: function(event) {
+    let id = event.currentTarget.id
+    let listFolded = this.data.listFolded
+    listFolded[id] = !listFolded[id]
+    this.setData({
+      listFolded: listFolded
+    })
   },
 
   /**

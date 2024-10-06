@@ -1,1 +1,112 @@
 /* pages/list/list.wxss */
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.task .tab {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task .tab .text {
+  display: inline-block; /* 使文字在同一行显示 */
+  white-space: nowrap; /* 防止文字换行 */
+  font-size: 40rpx;
+  font-weight: bold;
+  color: darksalmon;
+}
+
+.task .tab .btn {
+  flex-grow: 1; /* 让第二个div占据剩余的空间 */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task .tab .btn image {
+  width: 80rpx;
+  height: 80rpx;
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+
+.task .tab .btn image.fold {
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+
+.task .list-box {
+  width: 100%;
+}
+
+.task .list-box.fold {
+  height: 0;
+  overflow: hidden;
+}
+
+.task .list-box .list {
+  width: 100%;
+}
+
+.task .list-box .list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin: 20rpx;
+  height: 200rpx;
+}
+
+.task .list-box .list.todo .item {
+  background-color: #FFB6C1;
+}
+
+.task .list-box .list.doing .item {
+  background-color: #90EE90
+}
+
+.task .list-box .list.done .item {
+  background-color: #D3D3D3
+}
+
+.task .list-box .list .item .text {
+  width: 60%;
+}
+.task .list-box .list .item .text .title {
+  margin-bottom: 10rpx;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task .list-box .list .item .text .price {
+  font-size: 40rpx;
+  color: #FF0000;
+  margin-top: 10rpx;
+}
+.task .list-box .list .item .status {
+  min-width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+.task .list-box .list.todo .item .status {
+  background-color: #FF6347;
+}
+.task .list-box .list.doing .item .status {
+  background-color: #32CD32;
+}
+.task .list-box .list.done .item .status {
+  background-color: #A9A9A9;
+}

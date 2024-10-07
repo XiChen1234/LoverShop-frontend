@@ -7,11 +7,11 @@
   justify-content: space-around;
 }
 .component .line {
-  border: 0.5rpx solid #969696;
+  border: 0.5rpx solid #b4b4b4;
   width: 30%;
 }
 .component .text {
   font-size: 25rpx;
-  color: #949494;
+  color: #b4b4b4;
   font-weight: normal;
 }

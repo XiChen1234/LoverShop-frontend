@@ -1,2 +1,201 @@
 <!--pages/zone/zone.wxml-->
-<text>pages/zone/zone.wxml</text>
+<view class="publish">+</view>
+<view class="line"></view>
+<view class="list">
+  <view class="item">
+    <view class="header">
+      <view class="name">
+        <image src="/image/temp/Boy.png" mode="aspectFit" />
+        <text>老公大人老公大人</text>
+      </view>
+      <view class="time">2024年10月06日 18:00</view>
+    </view>
+    <view class="body">
+      <view class="content">今天很开心</view>
+      <view class="imageList">
+        <view class="image-box">
+          <image src="/image/temp/Boy.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/cat.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/df.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/Girl.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/love-act.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/mv.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/swim.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/baihe.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/biglei.jpg" mode="aspectFill" />
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="operate">
+        <!-- 后期更换icon链接 -->
+        <view class="icon active">
+          <image src="/image/icon/comment.png" mode="aspectFill"/>
+        </view>
+        <view class="icon active">
+          <image src="/image/icon/love.png" mode="aspectFill"/>
+        </view>
+      </view>
+      <view class="comment">
+        <text class="user">老婆大人</text>
+        <text class="hidden">回复</text>
+        <text class="user hidden">老公大人</text>
+        <text class="text">：老公我爱你~</text>
+      </view>
+      <view class="comment">
+        <text class="user">老公大人</text>
+        <text>回复</text>
+        <text class="user">老婆大人</text>
+        <text class="text">：老婆我也爱你~，爱你~</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="item">
+    <view class="header">
+      <view class="name">
+        <image src="/image/temp/Boy.png" mode="aspectFit" />
+        <text>老公大人老公大人</text>
+      </view>
+      <view class="time">2024年10月06日 18:00</view>
+    </view>
+    <view class="body">
+      <view class="content">今天很开心</view>
+      <view class="imageList">
+        <view class="image-box">
+          <image src="/image/temp/Boy.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/cat.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/df.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/Girl.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/love-act.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/mv.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/swim.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/baihe.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/biglei.jpg" mode="aspectFill" />
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="operate">
+        <view class="icon">
+          <image src="/image/icon/comment.png" mode="aspectFill"/>
+        </view>
+        <view class="icon">
+          <image src="/image/icon/love.png" mode="aspectFill"/>
+        </view>
+      </view>
+      <view class="comment">
+        <text class="user">老婆大人</text>
+        <text class="hidden">回复</text>
+        <text class="user hidden">老公大人</text>
+        <text class="text">：老公我爱你~</text>
+      </view>
+      <view class="comment">
+        <text class="user">老公大人</text>
+        <text>回复</text>
+        <text class="user">老婆大人</text>
+        <text class="text">：老婆我也爱你~，爱你~</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="item">
+    <view class="header">
+      <view class="name">
+        <image src="/image/temp/Boy.png" mode="aspectFit" />
+        <text>老公大人老公大人</text>
+      </view>
+      <view class="time">2024年10月06日 18:00</view>
+    </view>
+    <view class="body">
+      <view class="content">今天很开心</view>
+      <view class="imageList">
+        <view class="image-box">
+          <image src="/image/temp/Boy.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/cat.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/df.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/Girl.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/love-act.png" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/mv.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/swim.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/baihe.jpg" mode="aspectFill" />
+        </view>
+        <view class="image-box">
+          <image src="/image/temp/biglei.jpg" mode="aspectFill" />
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="operate">
+        <view class="icon">
+          <image src="/image/icon/comment.png" mode="aspectFill"/>
+        </view>
+        <view class="icon">
+          <image src="/image/icon/love.png" mode="aspectFill"/>
+        </view>
+      </view>
+      <view class="comment">
+        <text class="user">老婆大人</text>
+        <text class="hidden">回复</text>
+        <text class="user hidden">老公大人</text>
+        <text class="text">：老公我爱你~</text>
+      </view>
+      <view class="comment">
+        <text class="user">老公大人</text>
+        <text>回复</text>
+        <text class="user">老婆大人</text>
+        <text class="text">：老婆我也爱你~，爱你~</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view>
+  <bottomLine></bottomLine>
+</view>

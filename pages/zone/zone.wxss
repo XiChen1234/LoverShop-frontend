@@ -1,1 +1,128 @@
 /* pages/zone/zone.wxss */
+.publish {
+  margin: 30rpx;
+  padding: 40rpx;
+  text-align: center;
+  background-color: #dadada;
+  font-size: 100rpx;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 30rpx;
+  border: 10rpx dashed #b4b4b4;
+}
+
+.list {
+  width: 90%;
+  border-top: 1px solid #b4b4b4;
+  margin: 40rpx 0 0;
+  padding: 40rpx 40rpx 0 40rpx;
+}
+
+.list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.list .item .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list .item .header .name {
+  display: flex;
+  align-items: center;
+}
+
+.list .item .header .name text {
+  font-size: 40rpx;
+  padding-left: 40rpx;
+}
+
+.list .item .header .name image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.list .item .header .time {
+  font-size: 25rpx;
+  color: #b4b4b4;
+  text-align: right;
+}
+
+.list .item .body {
+  width: 100%;
+}
+
+.list .item .body .content {
+  font-size: 36rpx;
+  margin: 20rpx 0;
+}
+
+.list .item .body .imageList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.list .item .body .imageList .image-box {
+  width: 33.3%;
+  height: 0;
+  padding-bottom: 33.3%;
+  position: relative;
+}
+
+.list .item .body .imageList .image-box image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list .item .bottom {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list .item .bottom .operate {
+  align-self: flex-end;
+  display: flex;
+}
+
+.list .item .bottom .operate .icon {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 0 25rpx;
+}
+
+.list .item .bottom .operate .icon.active {
+  color: #FF1493;
+}
+
+.list .item .bottom .comment {
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 35rpx;
+}
+
+.list .item .bottom .comment .user {
+  color: #FF1493;
+}
+.list .item .bottom .comment .hidden {
+  display: none;
+}
+
+.list .item .bottom image {
+  width:100%;
+  height: 100%;
+}

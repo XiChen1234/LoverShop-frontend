@@ -1,2 +1,21 @@
 <!--pages/center/center.wxml-->
-<text>pages/center/center.wxml</text>
+<view class="info">
+  <view class="header">
+    <image src="/image/temp/Boy.png" mode="aspectFit" />
+  </view>
+  <view class="content">
+    <view class="name">老公大人</view>
+    <view class="text">今天天气很好，今天天气很好，今天天气很好，今天天气很好，</view>
+  </view>
+</view>
+
+<view class="operate">
+  <view class="list">
+    <view class="item">编辑信息</view>
+    <view class="item">商品管理</view>
+    <view class="item">纪恋日</view>
+    <view class="item">我的钱包</view>
+  </view>
+
+  <view class="button">退出登陆</view>
+</view>

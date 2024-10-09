@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.info.login {
+  background-color: #dfdfdf;
+}
 
 .info .header {
   width: 180rpx;

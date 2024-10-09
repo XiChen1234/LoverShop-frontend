@@ -1,5 +1,5 @@
 <!--pages/center/center.wxml-->
-<view class="info">
+<view class="info" wx:if="{{login}}">
   <view class="header">
     <image src="/image/temp/Boy.png" mode="aspectFit" />
   </view>
@@ -9,7 +9,19 @@
   </view>
 </view>
 
-<view class="operate">
+
+<view class="info login" wx:if="{{!login}}">
+  <view class="header">
+    <image src="/image/icon/emotion.png" mode="aspectFit" />
+  </view>
+  <view class="content">
+    <view class="name">未登录</view>
+    <view class="text">点击进行登陆/注册</view>
+  </view>
+</view>
+
+
+<view class="operate" wx:if="{{login}}">
   <view class="list">
     <view class="item">编辑信息</view>
     <view class="item">商品管理</view>

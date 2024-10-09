@@ -1,4 +1,5 @@
 <!--pages/center/center.wxml-->
+<!-- 已登录状态 -->
 <view class="info" wx:if="{{login}}">
   <view class="header">
     <image src="/image/temp/Boy.png" mode="aspectFit" />
@@ -9,7 +10,7 @@
   </view>
 </view>
 
-
+<!-- 未登录状态 -->
 <view class="info login" wx:if="{{!login}}">
   <view class="header">
     <image src="/image/icon/emotion.png" mode="aspectFit" />
@@ -20,7 +21,7 @@
   </view>
 </view>
 
-
+<!-- 操作列表 -->
 <view class="operate" wx:if="{{login}}">
   <view class="list">
     <view class="item">编辑信息</view>

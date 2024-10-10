@@ -1,17 +1,17 @@
 <!--pages/center/center.wxml-->
 <!-- 已登录状态 -->
-<view class="info" wx:if="{{login}}">
+<view class="info" wx:if="{{userInfo}}">
   <view class="header">
-    <image src="{{login.avatarUrl}}" mode="aspectFit" />
+    <image src="{{userInfo.avatarUrl}}" mode="aspectFit" />
   </view>
   <view class="content">
-    <view class="name">{{login.username}}</view>
-    <view class="text">{{login.motto}}</view>
+    <view class="name">{{userInfo.username}}</view>
+    <view class="text">{{userInfo.motto}}</view>
   </view>
 </view>
 
 <!-- 未登录状态 -->
-<view class="info login" wx:if="{{!login}}" bind:tap="toLogin">
+<view class="info login" wx:if="{{!userInfo}}" bind:tap="toLogin">
   <view class="header">
     <image src="/image/icon/emotion.png" mode="aspectFit" />
   </view>
@@ -22,7 +22,7 @@
 </view>
 
 <!-- 操作列表 -->
-<view class="operate" wx:if="{{login}}">
+<view class="operate" wx:if="{{userInfo}}">
   <view class="list">
     <view class="item">编辑信息</view>
     <view class="item">商品管理</view>

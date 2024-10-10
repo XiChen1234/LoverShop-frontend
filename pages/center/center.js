@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    login: null
+    userInfo: null
   },
 
   // 点击按钮登陆操作
@@ -32,13 +32,13 @@ Page({
     .then(res => {
       console.log(res)
       this.setData({
-        login: {
+        userInfo: {
           username: res.username,
           avatarUrl: res.avatarUrl,
           motto: res.motto
         }
       })
-      wx.setStorageSync('userInfo', this.data.login)
+      wx.setStorageSync('userInfo', this.data.userInfo)
     }).catch(err => {
       console.log(err)
     })
@@ -48,10 +48,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    let login = wx.getStorageSync('userInfo');
-    if (login) {
+    let userInfo = wx.getStorageSync('userInfo');
+    if (userInfo) {
         this.setData({
-            login: login
+            userInfo: userInfo
         })
     }
   },

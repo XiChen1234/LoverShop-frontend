@@ -2,15 +2,17 @@ const request = require('../utils/request')
 const modelUrl = '/user'
 
 // api列表，向下扩展
-var login = function (params) {
+var login = function (param) {
   return request.post({
     url: modelUrl + '/login',
     data: {
-      "code": "0d3Umz100icrXS1HY4100WhyF11Umz1p"
+      "code": param
     }
   })
 }
 
 module.exports = {
-  login
+  userAPI: {
+    login
+  }
 }

@@ -2,16 +2,16 @@
 <!-- 已登录状态 -->
 <view class="info" wx:if="{{login}}">
   <view class="header">
-    <image src="/image/temp/Boy.png" mode="aspectFit" />
+    <image src="{{login.avatarUrl}}" mode="aspectFit" />
   </view>
   <view class="content">
-    <view class="name">老公大人</view>
-    <view class="text">今天天气很好，今天天气很好，今天天气很好，今天天气很好，</view>
+    <view class="name">{{login.username}}</view>
+    <view class="text">{{login.motto}}</view>
   </view>
 </view>
 
 <!-- 未登录状态 -->
-<view class="info login" wx:if="{{!login}}">
+<view class="info login" wx:if="{{!login}}" bind:tap="toLogin">
   <view class="header">
     <image src="/image/icon/emotion.png" mode="aspectFit" />
   </view>

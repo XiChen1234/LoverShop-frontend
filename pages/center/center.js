@@ -1,4 +1,6 @@
 // pages/center/center.js
+import {userAPI} from '../../api/userAPI'
+
 Page({
 
   /**
@@ -6,6 +8,26 @@ Page({
    */
   data: {
     login: null
+  },
+
+  // 点击按钮登陆操作
+  toLogin: function () {
+    // 获得code
+    wx.login({
+      success: (res) => {
+        userAPI.login(res.code)
+          .then(res => {
+            console.log(res)
+          }).catch(err => {
+            console.log(err)
+          })
+      },
+      fail: (err => {
+        console.log(err)
+      }) 
+    })
+    // 获得用户信息
+    // 设置用户登陆状态
   },
 
   /**

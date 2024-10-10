@@ -10,11 +10,10 @@ function post(params) {
         'content-type': 'application/json'
       },
       success: function (res) {
-        console.log(res)
-        if(res.code === 200) {
-          resolve
+        if(res.data.status === 200) {
+          resolve(res.data.data)
         } else {
-          reject
+          reject(res.data.status, res.data.message)
         }
       },
       fail: function (err) {

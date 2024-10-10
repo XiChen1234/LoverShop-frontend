@@ -15,19 +15,32 @@ Page({
     // 获得code
     wx.login({
       success: (res) => {
-        userAPI.login(res.code)
-          .then(res => {
-            console.log(res)
-          }).catch(err => {
-            console.log(err)
-          })
+        this.login(res.code)
       },
       fail: (err => {
         console.log(err)
       }) 
     })
-    // 获得用户信息
-    // 设置用户登陆状态
+  },
+
+  /**
+   * 用户登陆操作
+   * @param {str} code 临时代码
+   */
+  login(code) {
+    userAPI.login(code)
+    .then(res => {
+      console.log(res)
+      this.setData({
+        login: {
+          username: res.username,
+          avatarUrl: res.avatarUrl,
+          motto: res.motto
+        }
+      })
+    }).catch(err => {
+      console.log(err)
+    })
   },
 
   /**

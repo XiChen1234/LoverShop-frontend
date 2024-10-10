@@ -38,6 +38,7 @@ Page({
           motto: res.motto
         }
       })
+      wx.setStorageSync('userInfo', this.data.login)
     }).catch(err => {
       console.log(err)
     })
@@ -47,7 +48,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    let login = wx.getStorageSync('userInfo');
+    if (login) {
+        this.setData({
+            login: login
+        })
+    }
   },
 
   /**

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/center/center",
     "pages/list/list",
-    "pages/zone/zone"
+    "pages/zone/zone",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFB6C1",

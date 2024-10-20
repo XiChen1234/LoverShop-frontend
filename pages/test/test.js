@@ -1,5 +1,10 @@
 // pages/test/test.js
-import {login} from '../../api/userAPI'
+import {
+  login
+} from '../../api/userAPI'
+const {
+  get
+} = require('../../utils/request.js')
 
 Page({
 
@@ -11,7 +16,11 @@ Page({
   },
 
   test: function () {
-    login("123")
+    wx.login({
+      success: (res) => {
+        console.log(res.code)
+      },
+    })
   },
 
   /**
